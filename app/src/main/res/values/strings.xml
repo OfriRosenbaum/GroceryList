@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="_0">0</string>
+    <string name="increase">increase</string>
+    <string name="decrease">decrease</string>
+    <string name="second_activity">second activity</string>
+    <string name="move_to_first">move to first</string>
+    <string name="move_to_second">move to second</string>
+    <string name="dice_roll">dice roll</string>
+    <string name="roll_dice">roll dice</string>
+    <string name="dice_roller">dice roller</string>
+    <string name="dice">dice</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="add">add</string>
+    <string name="empty_item">Empty Item</string>
+</resources>

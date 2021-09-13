@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:text="@string/_0"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/button_decrease"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_amount"
+        android:layout_alignBottom="@+id/text_amount"
+        android:layout_toStartOf="@+id/text_amount"
+        android:onClick="onClick"
+        android:text="@string/minus"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_increase"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_amount"
+        android:layout_alignBottom="@+id/text_amount"
+        android:layout_toEndOf="@+id/text_amount"
+        android:onClick="onClick"
+        android:text="@string/plus"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_amount"
+        android:layout_alignBottom="@+id/text_amount"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/button_increase"
+        android:onClick="onClick"
+        android:text="@string/add"
+        android:textSize="18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_amount" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button_move_second"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="@string/move_to_second"-->
+    <!--        android:textSize="18sp" />-->
+
+</RelativeLayout>
